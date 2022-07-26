@@ -63,9 +63,7 @@
   padding-bottom: 120px;
   background-color: hsl(218, 28%, 13%);
   display: grid;
-  grid-template-areas:
-    "icone1 icone2"
-    "icone3 icone4";
+  grid-template-columns: repeat(auto-fit, minmax(400px, 500px));
   text-align: center;
   align-items: center;
   justify-content: space-evenly;
@@ -89,6 +87,7 @@
 .icone3,
 .icone4 {
   max-width: 400px;
+  margin: 0 auto;
 }
 
 .imagem-secundaria {
@@ -104,7 +103,7 @@
 }
 
 .imagem-secundaria .mantenha-se-produtivo img{
-  width: 100%;
+  max-width: 100%;
 }
 
 .imagem-secundaria .descricao2 {
@@ -237,10 +236,10 @@
 
 .rodape {
   padding: 190px 100px;
-  display: grid;
-  grid-template-areas:
-    "logo logo logo logo logo"
-    "localizacao contato sobre-nos contate-nos social";
+}
+
+.contatos{
+  display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
@@ -257,7 +256,6 @@
 
 .localizacao {
   gap: 20px;
-  grid-area: localizacao;
 }
 
 .contato {
@@ -270,20 +268,12 @@
   margin-bottom: 20px;
 }
 
-.sobre-nos {
-  grid-area: sobre-nos;
-}
-
 .sobre-nos a:hover {
   font-weight: 700;
 }
 
 .sobre-nos ul a {
   line-height: 40px;
-}
-
-.contate-nos {
-  grid-area: contate-nos;
 }
 
 .contate-nos a:hover {
@@ -296,7 +286,6 @@
 
 .social {
   display: flex;
-  grid-area: social;
   gap: 20px;
   font-size: 20px;
   text-align: center;
@@ -307,6 +296,7 @@
   padding: 8px;
   border-radius: 100%;
   width: 47px;
+  height: 30%;
 }
 
 .social a:hover {
