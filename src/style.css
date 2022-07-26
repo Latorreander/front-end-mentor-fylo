@@ -25,6 +25,11 @@
   text-align: center;
 }
 
+.conteudo-principal .ilustracao-da-intro img{
+  max-width: 60%;
+  height: auto;
+}
+
 .conteudo-principal .descricao1 {
   text-align: center;
   margin: 0 auto;
@@ -40,6 +45,11 @@
 .conteudo-principal .descricao1 .texto {
   font-size: 22px;
   margin-bottom: 60px;
+}
+
+.conteudo-principal .botao{
+  width: 317px;
+  margin: 0 auto;
 }
 
 .conteudo-principal .botao a {
@@ -103,7 +113,8 @@
 }
 
 .imagem-secundaria .mantenha-se-produtivo img{
-  max-width: 100%;
+  max-width: 80%;
+  height: auto;
 }
 
 .imagem-secundaria .descricao2 {
